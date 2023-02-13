@@ -1,0 +1,157 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+
+     text-decoration: none;
+     list-style: none;
+     color: rgba(255, 255, 255, 0.879);
+}
+body{
+    background-color: rgba(0, 0, 0, 0.84);
+}
+header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+}
+.menu img{
+    height: 30px;
+    display: none;
+}
+.nav ul{
+  display: flex;
+  padding: 10px 0px;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav ul li{
+padding: 10px 15px;
+border-radius: 20px;
+border: none;
+font-weight: 600;
+
+}
+.home{
+    font-weight: 900;
+      background-color: #7529d7;
+  }
+
+.nav ul li:hover{
+background-color: #7529d7;
+color: white;
+
+}
+main{
+    max-width: 1000px;
+    /* background-color: red; */
+    display: flex;
+   
+    flex-direction: column;
+    margin: 0px auto;
+    margin-top: 120px;
+    align-items: center;
+    justify-content: center;
+}
+.main_section1{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: center;
+   flex-direction: row;
+   gap: 40px;
+}
+.main_section1_1{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+    transition: all ease 1s;
+
+   
+}
+.main_section1_1 p{
+    font-weight: 800;
+}
+.main_section1_1 .a{
+    color: rgb(223, 213, 98);
+}
+
+.main_section1  img{
+    transition: all ease 1s;
+
+    width: 500px;
+}
+.main_section2{
+    max-width: 100%;
+    display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+.main_section2 img{
+    width: 400px;
+   margin: 5px;
+}
+ .heading{
+  text-align: center;
+    border-bottom: 3px solid blue;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+ .heding{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+.heding span{
+    border-bottom: 3px solid blue;
+}
+footer{
+  height: 100px;
+}
+footer ul{
+    height: 90%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 30px;
+
+}
+footer img{
+    height: 20px;
+    
+}
+@media (max-width:1000px){
+    .menu img{
+        height: 30px;
+        display: block;
+    }
+    .nav{
+        display: none;
+    }
+}
+@media (max-width:760px){
+    .main_section1_1{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        align-items: center;
+       
+    }
+    
+    .main_section1  img{
+        width: 300px;
+    }
+    .main_section2 img{
+        width: 300px;
+       margin: 5px;
+    }
+}
